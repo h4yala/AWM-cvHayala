@@ -1,0 +1,349 @@
+/* ------- FORMATAÇÕES GERAIS ------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Unna", serif;
+}
+
+body {
+    background-color: #fadcd1;
+    height: 100vh;
+}
+main {
+    padding-top: 150px;
+}
+        
+section {
+    scroll-margin-top: 150px; 
+}
+
+.topo {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+section.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0px 290px 50px ;
+    border:#540909 solid 3px;
+    gap: 100px;
+    padding: 40px 4%;
+    border-radius: 2cap;
+    transition: .2s;
+    cursor: pointer;
+}
+
+section.sobre:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #540909af;
+}
+
+h2.titulo {
+    text-align: center;
+    color: #540909;
+    font-size: 1.5rem;
+    font-family: "DM Serif Text", serif;
+    margin: 1rem 0;
+}
+
+p.texto {
+    text-align: center;
+    color: #381212;
+    font-size: 1rem;
+    font-family: "Unna", serif;
+}
+
+/* ------- FORMATAÇÃO DO CABEÇALHO ------- */
+header {
+    background-color: #540909;
+    padding: 30px 4%;
+    position: fixed; 
+    top: 0;          
+    width: 100%;     
+    z-index: 1000;   
+}
+
+header > .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #925353;
+    text-decoration: none;
+    display: inline-block;
+    transition: .15s;
+}
+
+header a:hover {
+    color: #fadcd1;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+header nav li {
+    display: inline-block;
+    padding: 0% 40px;
+}
+
+
+/* ------- FORMATAÇÃO DA APRESENTAÇÃO ------- */
+section.apresentacao {
+    padding: 40px 4%;
+
+}
+
+section.apresentacao .flex {
+    align-items: center;
+    gap: 650px;
+}
+
+.topo .texto-apresentacao h1{
+    text-align: center;
+    color:#540909;
+    font-size: 4rem;
+    font-family: "Corinthia", cursive;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.topo .texto-apresentacao p {
+    text-align: center;
+    color: #381212;
+    font-size: 1rem;
+    font-family: "DM Serif Text", serif;
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+}
+
+/* ------- FORMATAÇÃO DA FORMAÇÃO ------- */
+section.formacao {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0px 290px 50px ;
+    background-color:#540909;
+    gap: 100px;
+    padding: 40px 4%;
+    transition: .2s;
+    cursor: pointer;
+}
+
+section.formacao:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #540909af;
+}
+
+.formacao h2 {
+    text-align: justify;
+    color: #fadcd1;
+    font-size: 1.5rem;
+    font-family: "DM Serif Text", serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.formacao h3 {
+    text-align: center;
+    color: #fadcd1;
+    font-size: 1.2rem;
+    font-family: "Unna", serif;
+    margin: 1rem 0;
+}
+
+.formacao p.texto {
+    text-align: center;
+    color: #fadcd1;
+    font-size: 1rem;
+    font-family: "Unna", serif;
+    margin: 0 3rem;
+}
+
+/* ------- FORMATAÇÃO DO PORTFÓLIO ------- */
+section.portfolio {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #54090963;
+    border-radius: 2cap;
+    margin: 0px 290px 50px;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    border-radius: 3cap;
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 8s;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 20px 10px #3812124f;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(84, 9, 9, 0.671);
+    border-radius: 2cap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fadcd1;
+    opacity: 0;
+    transition: .5s;
+}   
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+/* ------- FORMATAÇÃO DO FORMULÁRIO ------- */
+section.formulario {
+    padding: 40px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #54090928;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #381212;
+    font-size: 1rem;
+    font-family: "Unna", serif;
+}
+
+form input::placeholder {
+    color: #3812128e;
+}
+
+form textarea::placeholder {
+    color: #3812128e;
+}
+
+form textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+form .form-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .form-enviar input {
+    width: 120px;
+    background-color: #540909;
+    color: #fadcd1;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .form-enviar input:hover {
+    box-shadow: 0px 0px 8px #540909af;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+#mensagem-feedback {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-family: "Unna", serif;
+    color: #540909;
+}
+
+/* ------- FORMATAÇÃO DO RODAPÉ ------- */
+footer {
+    background-color: rgb(84, 9, 9);
+    padding: 10px 4%;
+}
+
+footer > .rodape {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    color: #fadcd1;
+    font-family: "Unna", serif;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+.email-footer {
+    margin-left: 100px;
+}
+
+.footer-text {
+    text-align: center;
+    color: #fadcd1;
+    font-size: 1rem;
+    font-family: "Unna", serif;
+    margin: 0;
+}
+
+.hhs-social button {
+    background-color: transparent;
+    border: none;
+    color: #fadcd1;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+
+footer a {
+    color: #925353;
+    text-decoration: none;
+    display: inline-block;
+    transition: .15s;
+}
+
+footer a:hover {
+    color: #fadcd1;
+    transform: scale(1.05);
+}
+
