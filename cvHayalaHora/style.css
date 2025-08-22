@@ -202,17 +202,6 @@ section.portfolio .flex {
     box-shadow: 0 0 20px 10px #3812124f;
 }
 
-.gif-port {
-    width: 360px;
-    height: 460px;
-    border-radius: 3cap;
-    background-size: cover;
-    transition: 8s;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 0 20px 10px #3812124f;
-}
-
 .img-port:hover{
     background-position: 100% 100%;
 }
